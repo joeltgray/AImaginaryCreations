@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/joeltgray/randomImageGenerator/issues"
   },
-  "homepage": "https://github.com/joeltgray/randomImageGenerator#readme"
+  "homepage": "https://github.com/joeltgray/randomImageGenerator#readme",
+  "dependencies": {
+    "openai": "^3.1.0"
+  }
 }
