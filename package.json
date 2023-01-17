@@ -1,0 +1,19 @@
+{
+  "name": "randomimagegenerator",
+  "version": "1.0.0",
+  "description": "A program to generate random images using AI prompts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeltgray/randomImageGenerator.git"
+  },
+  "author": "Joel Gray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeltgray/randomImageGenerator/issues"
+  },
+  "homepage": "https://github.com/joeltgray/randomImageGenerator#readme"
+}
