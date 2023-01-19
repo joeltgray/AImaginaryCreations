@@ -1,7 +1,19 @@
 # AImaginaryCreations
 Posts can be found on Instagram at: @aimaginary_creations
 
-## An Instagram bot that generates AI images and posts them to the specified profile
+## An Instagram bot to generate and post AI images
+
+### Usage
+You must provide a .env file in your root working directory and ensure it has the necessary variables, tokens, username, password etc
+
+Ensure you have node.js installed
+
+Clone this Git repo to your local environment
+
+Run `npm install` from the root working directory to install the project using node
+
+Run `npm run start` to begin the program
+
 
 ### This program is a fully automated AI bot. The program works in 5 main steps:
 1: Generates between 2 to 5 random words from the dictionary 
@@ -18,18 +30,6 @@ Posts can be found on Instagram at: @aimaginary_creations
 
 5: Finally we upload the image to Instagram using the image url returned from the Imgur upload response.
     (We use the instagram-private-api package for this as most others are outdated)
-
-
-### Usage
-You must provide a .env file in your root working directory and ensure it has the necessary variables, tokens, username, password etc
-
-Ensure you have node.js installed
-
-Clone this Git repo to your local environment
-
-Run `npm install` from the root working directory to install the project using node
-
-Run `npm run start` to begin the program
 
 
 ### Limitations
