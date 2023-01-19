@@ -1,5 +1,5 @@
 {
-  "name": "randomimagegenerator",
+  "name": "AImaginaryCreations",
   "version": "1.0.0",
   "description": "A program to generate random images using AI prompts",
   "main": "src/index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joeltgray/randomImageGenerator.git"
+    "url": "git+https://github.com/joeltgray/AImaginaryCreations.git"
   },
   "author": "Joel Gray",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joeltgray/randomImageGenerator/issues"
+    "url": "https://github.com/joeltgray/AImaginaryCreations/issues"
   },
-  "homepage": "https://github.com/joeltgray/randomImageGenerator#readme",
+  "homepage": "https://github.com/joeltgray/AImaginaryCreations#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "instagram-private-api": "^1.45.3",
