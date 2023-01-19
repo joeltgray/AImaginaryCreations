@@ -127,7 +127,7 @@ const postImage = async (imageUrl, caption) => {
   console.log("Image Buffer Created");
   const publishRes = await ig.publish.photo({
     file: imageBuffer,
-    caption: caption + "#AI #AIArt #AIArtwork #AIArtCommunity",
+    caption: `${caption}\n#AI #AIArt #AIArtwork #AIArtCommunity`,
   });
   return publishRes;
 };
