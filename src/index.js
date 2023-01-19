@@ -129,7 +129,6 @@ const postImage = async (imageUrl, caption) => {
     file: imageBuffer,
     caption: `${caption}\n#AI #AIArt #AIArtwork #AIArtCommunity`,
   });
-  return publishRes;
 };
 
 const main = async () => {
