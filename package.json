@@ -2,7 +2,7 @@
   "name": "randomimagegenerator",
   "version": "1.0.0",
   "description": "A program to generate random images using AI prompts",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,14 @@
   },
   "homepage": "https://github.com/joeltgray/randomImageGenerator#readme",
   "dependencies": {
-    "openai": "^3.1.0"
+    "cron": "^2.2.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "instagram-private-api": "^1.45.3",
+    "instagram-web-api": "^2.2.2",
+    "openai": "^3.1.0",
+    "random-words": "^1.2.1",
+    "request-promise": "^4.2.6",
+    "tough-cookie-filestore2": "^1.0.0"
   }
 }
