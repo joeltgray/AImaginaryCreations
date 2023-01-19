@@ -22,7 +22,6 @@
     "openai": "^3.1.0",
     "random-words": "^1.2.1",
     "request-promise": "^4.2.6",
-    "sharp": "^0.31.3",
-    "tough-cookie-filestore2": "^1.0.0"
+    "sharp": "^0.31.3"
   }
 }
