@@ -35,7 +35,7 @@ const getImageCaption = async (words) => {
     model: "text-davinci-003",
     prompt: prompt,
     temperature: 0,
-    max_tokens: 30,
+    max_tokens: 50,
   });
 
   const res = response.data.choices[0].text;
