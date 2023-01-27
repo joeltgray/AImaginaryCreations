@@ -6,7 +6,7 @@ Posts can be found on Instagram at: @aimaginary_creations
 ### Usage
 You must provide a .env file in your root working directory and ensure it has the necessary variables, tokens, username, password etc
 
-Ensure you have node.js installed
+Ensure you have node.js v19.4.0 installed
 
 Clone this Git repo to your local environment
 
