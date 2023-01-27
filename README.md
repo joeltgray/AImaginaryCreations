@@ -5,6 +5,7 @@ Posts can be found on Instagram at: @aimaginary_creations
 
 ### Usage
 Subject to MIT Licence, see LICENCE.md file for more details.
+
 You must provide a .env file in your root working directory and ensure it has the necessary variables, tokens, username, password etc
 
 Ensure you have node.js v19.4.0 installed
