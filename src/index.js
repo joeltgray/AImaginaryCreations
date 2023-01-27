@@ -26,31 +26,53 @@ const getRandomWords = async () => {
 };
 
 const getImageCaption = async (words) => {
+  let response;
   const prompt =
-    "Use the following words as the object of an image, to create a caption that would make an image AI generate an amazing image, include a random style within the prompt: " +
-    words;
+    `Use the following words as the object of an image: ${words}. Create a caption that would make an image AI generate an amazing picture. Include an image style at the end with a #style. \
+    Do not prompt for cartoon or animated, all images must be realistic or a real art type such as impressionism, watercolour etc`;
   console.log("Prompt: " + prompt);
 
-  const response = await openai.createCompletion({
-    model: "text-davinci-003",
-    prompt: prompt,
-    temperature: 0,
-    max_tokens: 50,
-  });
+  try{
+    response = await createPrompt(prompt);
+  } catch {
+    console.error("Creation of prompt failed, retrying");
+    sleep(10000);
+    response = await createPrompt(prompt);
+  }
 
   const res = response.data.choices[0].text;
   console.log("Caption " + res);
   return res;
 };
 
+const createPrompt = async (prompt) => {
+  return await openai.createCompletion({
+    model: "text-davinci-003",
+    prompt: prompt,
+    temperature: 0,
+    max_tokens: 50,
+  });
+};
+
 const getImage = async (caption) => {
-  const response = await openai.createImage({
+  let response;
+  try {
+    response = await genImage(caption);
+  } catch {
+    console.error("Creation of image failed, retrying");
+    sleep(10000);
+    response = await genImage(caption);
+  }
+  imageData = response.data.data[0].url;
+  return imageData;
+};
+
+const genImage = async (caption) => {
+  return await openai.createImage({
     prompt: caption,
     n: 1,
     size: "1024x1024",
   });
-  imageData = response.data.data[0].url;
-  return imageData;
 };
 
 const saveImage = async (imageData) => {
@@ -125,20 +147,47 @@ const postImage = async (imageUrl, caption) => {
   });
 
   console.log("Image Buffer Created");
-  const publishRes = await ig.publish.photo({
+  await ig.publish.photo({
     file: imageBuffer,
     caption: `${caption}\n#AI #AIArt #AIArtwork #AIArtCommunity`,
   });
 };
 
+async function sleep(time) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, time);
+  });
+}
+
+
 const main = async () => {
   const words = await getRandomWords();
+  console.log(`Words generated: ${words}`)
   const caption = await getImageCaption(words);
   const imgData = await getImage(caption);
   await saveImage(imgData);
   await convertToJPEG();
-  const imgUrl = await imgurUpload(caption);
-  await postImage(imgUrl, caption);
+
+  let imgUrl;
+
+  try {
+    imgUrl = await imgurUpload(caption);
+  } catch {
+    console.error("Upload image to Imgur failed, retrying");
+    sleep(10000);
+    imgUrl = await imgurUpload(caption);
+  }
+
+  try {
+    await postImage(imgUrl, caption);
+  } catch {
+    console.error("Upload image to Instagram failed, retrying");
+    sleep(10000);
+    await postImage(imgUrl, caption);
+  }
+  
   console.log("Completed");
 };
 
