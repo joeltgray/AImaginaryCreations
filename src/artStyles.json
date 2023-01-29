@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Realism",
+    "description": "A style of art that aims to depict the subject matter in a truthful and objective way, without any exaggeration or idealization"
+  },
+  {
+    "name": "Impressionism",
+    "description": "A style of art that emphasizes the use of light, color, and movement to capture the impressions of a moment or a scene"
+  },
+  {
+    "name": "Cubism",
+    "description": "A style of art that breaks down the subject matter into geometric shapes and rearranges them to create multiple perspectives"
+  },
+  {
+    "name": "Surrealism",
+    "description": "A style of art that uses elements of fantasy, dream, and the subconscious to create a sense of irrationality and surprise"
+  },
+  {
+    "name": "Abstract art",
+    "description": "A style of art that does not depict realistic objects or scenes, but rather uses color, shape, and form to create a visual experience"
+  },
+  {
+    "name": "Pop art",
+    "description": "A style of art that uses imagery from popular culture, such as advertisements, comic books, and consumer products, to comment on society and consumerism"
+  },
+  {
+    "name": "Fauvism",
+    "description": "A style of art characterized by vibrant colors, bold brushstrokes, and a lack of detail, that emerged in the early 20th century"
+  },
+  {
+    "name": "Expressionism",
+    "description": "A style of art that emphasizes the artist's inner emotions and feelings, often using distorted forms and non-naturalistic colors"
+  },
+  {
+    "name": "Futurism",
+    "description": "A style of art that celebrates the modern world, technology, and the machine age, often using dynamic and geometric shapes"
+  },
+  {
+    "name": "Dadaism",
+    "description": "A style of art that emerged during World War I as a reaction to the absurdity and horror of the war, often using found objects and collage"
+  },
+  {
+    "name": "Op art",
+    "description": "A style of art that uses optical illusions and geometric patterns to create a sense of movement and depth"
+  },
+  {
+    "name": "Minimalism",
+    "description": "A style of art that emphasizes simplicity, reduction, and the use of basic geometric shapes and monochromatic colors"
+  },
+  {
+    "name": "Renaissance art",
+    "description": "A style of art that emerged in the 14th century in Italy, characterized by a renewed interest in classical art and culture, realism, and the use of linear perspective"
+  },
+  {
+    "name": "Baroque art",
+    "description": "A style of art that emerged in the late 16th century in Italy, characterized by grandeur, drama, movement, and emotional intensity"
+  },
+  {
+    "name": "Romanticism",
+    "description": "A style of art that emerged in the late 18th century, characterized by emotion, imagination, and a fascination with the natural world"
+  },
+  {
+    "name": "Art Nouveau",
+    "description": "A style of art and architecture that emerged in the late 19th century, characterized by organic forms, asymmetry, and the use of new materials, such as iron and glass"
+  },
+  {
+    "name": "Art Deco",
+    "description": "A style of art and architecture that emerged in the 1920s, characterized by geometric shapes, bold colors, and the use of new materials, such as stainless steel and plastic"
+  },
+  {
+    "name": "Abstract Expressionism",
+    "description": "A style of art that emerged in the 1940s in the United States, characterized by the use of large canvases, gestural brushstrokes, and the exploration of the unconscious"
+  },
+  {
+    "name": "Conceptual art",
+    "description": "A style of art that emerged in the 1960s, characterized by the use of ideas and concepts as the primary medium of expression, rather than the traditional art forms"
+  },
+  {
+    "name": "Neo-expressionism",
+    "description": "A style of art that emerged in the 1970s and 1980s, characterized by the use of bright colors, bold brushstrokes, and the return to figuration, often with an emotional and symbolic content"
+  }
+]

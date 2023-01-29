@@ -9,6 +9,7 @@ const readFileAsync = promisify(fs.readFile);
 const { IgApiClient } = require("instagram-private-api");
 const { get } = require("request-promise");
 const randomWords = require("random-words");
+const artStyles = require('./artStyles.json');
 
 //CONFIG
 const { Configuration, OpenAIApi } = require("openai");
@@ -26,10 +27,14 @@ const getRandomWords = async () => {
 };
 
 const getImageCaption = async (words) => {
+  // Select a random index from the array
+  const randomIndex = Math.floor(Math.random() * artStyles.length);
+  // Select the "name" attribute from the random option
+  const randomArtStyle = artStyles[randomIndex].name;
+  console.log(`Art Style: ${randomArtStyle}`)
   let response;
   const prompt =
-    `Use the following words as the object of an image: ${words}. Create a caption that would make an image AI generate an amazing picture. Include an image style at the end with a #style. \
-    Do not prompt for cartoon or animated, all images must be realistic or a real art type such as impressionism, watercolour etc`;
+    `Use the following words as the object of an image: ${words}. Create a caption that would make an image AI generate an amazing picture. Include the following art type #${randomArtStyle} at the end of the caption`;
   console.log("Prompt: " + prompt);
 
   try{
@@ -41,7 +46,7 @@ const getImageCaption = async (words) => {
   }
 
   const res = response.data.choices[0].text;
-  console.log("Caption " + res);
+  console.log(`Caption: ${res}`);
   return res;
 };
 
@@ -58,10 +63,11 @@ const getImage = async (caption) => {
   let response;
   try {
     response = await genImage(caption);
-  } catch {
+  } catch (error) {
     console.error("Creation of image failed, retrying");
+    console.error(error)
     sleep(10000);
-    response = await genImage(caption);
+    response = await getImage(caption);
   }
   imageData = response.data.data[0].url;
   return imageData;
