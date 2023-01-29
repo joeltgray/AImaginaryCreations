@@ -65,7 +65,8 @@ const getImage = async (caption) => {
     response = await genImage(caption);
   } catch (error) {
     console.error("Creation of image failed, retrying");
-    console.error(error)
+    console.log(error.response.status)
+    console.log(error.response.statusText)
     sleep(10000);
     response = await getImage(caption);
   }
@@ -98,10 +99,10 @@ const convertToJPEG = async () => {
     .jpeg({ quality: 90 })
     .toFile("image.jpg")
     .then(() => {
-      console.log("image converted successfully");
+      console.log("Image converted to .JPG successfully");
     })
     .catch((err) => {
-      console.log("error converting image:", err);
+      console.error("Error converting image:", err);
     });
 };
 
@@ -180,6 +181,7 @@ const main = async () => {
 
   try {
     imgUrl = await imgurUpload(caption);
+    console.log("Uploaded to Imgur Successfully")
   } catch {
     console.error("Upload image to Imgur failed, retrying");
     sleep(10000);
@@ -188,6 +190,7 @@ const main = async () => {
 
   try {
     await postImage(imgUrl, caption);
+    console.log("Uploaded to Instagram Successfully")
   } catch {
     console.error("Upload image to Instagram failed, retrying");
     sleep(10000);
