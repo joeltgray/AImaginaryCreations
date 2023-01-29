@@ -63,10 +63,10 @@ const getImage = async (caption) => {
   let response;
   try {
     response = await genImage(caption);
+    console.log(`Image generation response: ${response.status}, ${response.statusText}`)
   } catch (error) {
+    console.log(`Image generation response: ${error.response.status}, ${error.response.statusText}`)
     console.error("Creation of image failed, retrying");
-    console.log(error.response.status)
-    console.log(error.response.statusText)
     sleep(10000);
     response = await getImage(caption);
   }
