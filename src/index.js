@@ -34,7 +34,7 @@ const getImageCaption = async (words) => {
   console.log(`Art Style: ${randomArtStyle}`)
   let response;
   const prompt =
-    `Use the following words as the object of an image: ${words}. Create a caption that would make an image AI generate an amazing picture. Include the following art type #${randomArtStyle} at the end of the caption`;
+    `Use the following words as the object of an image: ${words}. Create a caption that would make an image AI generate an amazing picture. Add the following text at the end "#${randomArtStyle}"`;
   console.log("Prompt: " + prompt);
 
   try{
