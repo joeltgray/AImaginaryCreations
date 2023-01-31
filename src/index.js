@@ -23,7 +23,7 @@ const imgur_token = process.env.imgur_token;
 const imgPath = path.join(process.cwd(), "image.png");
 
 const getRandomWords = async () => {
-  return randomWords({ min: 2, max: 5, join: " " });
+  return randomWords({ min: 3, max: 7, join: " " });
 };
 
 const getImageCaption = async (words) => {
