@@ -21,20 +21,21 @@ const username = process.env.username;
 const password = process.env.password;
 const imgur_token = process.env.imgur_token;
 const imgPath = path.join(process.cwd(), "image.png");
+let randomArtStyle = null
+
 
 const getRandomWords = async () => {
-  return randomWords({ min: 3, max: 7, join: " " });
+  return randomWords({ min: 1, max: 3, join: " " });
 };
 
 const getImageCaption = async (words) => {
   // Select a random index from the array
   const randomIndex = Math.floor(Math.random() * artStyles.length);
   // Select the "name" attribute from the random option
-  const randomArtStyle = artStyles[randomIndex].name;
+  randomArtStyle = artStyles[randomIndex].name;
   console.log(`Art Style: ${randomArtStyle}`)
   let response;
-  const prompt =
-    `Use the following words as the object of an image: ${words}. Create a caption that would make an image AI generate an amazing picture. Add the following text at the end "#${randomArtStyle}"`;
+  const prompt = `Use the following words: ${words}. Create a caption for an image that would make an image AI generator create an amazing picture.`;
   console.log("Prompt: " + prompt);
 
   try{
@@ -156,7 +157,7 @@ const postImage = async (imageUrl, caption) => {
   console.log("Image Buffer Created");
   await ig.publish.photo({
     file: imageBuffer,
-    caption: `${caption}\n#AI #AIArt #AIArtwork #AIArtCommunity`,
+    caption: `${caption}\n#AI #AIArt #AIArtwork #AIArtCommunity #Dalle #Dalle2 #OpenAI`,
   });
 };
 
@@ -173,28 +174,29 @@ const main = async () => {
   const words = await getRandomWords();
   console.log(`Words generated: ${words}`)
   const caption = await getImageCaption(words);
-  const imgData = await getImage(caption);
+  imageCaption = caption + ` #${randomArtStyle}`
+  const imgData = await getImage(imageCaption);
   await saveImage(imgData);
   await convertToJPEG();
 
   let imgUrl;
 
   try {
-    imgUrl = await imgurUpload(caption);
+    imgUrl = await imgurUpload(imageCaption);
     console.log("Uploaded to Imgur Successfully")
   } catch {
     console.error("Upload image to Imgur failed, retrying");
     sleep(10000);
-    imgUrl = await imgurUpload(caption);
+    imgUrl = await imgurUpload(imageCaption);
   }
 
   try {
-    await postImage(imgUrl, caption);
+    await postImage(imgUrl, imageCaption);
     console.log("Uploaded to Instagram Successfully")
   } catch {
     console.error("Upload image to Instagram failed, retrying");
     sleep(10000);
-    await postImage(imgUrl, caption);
+    await postImage(imgUrl, imageCaption);
   }
   
   console.log("Completed");
