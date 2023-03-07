@@ -171,7 +171,13 @@ async function sleep(time) {
 
 
 const main = async () => {
-  const words = await getRandomWords();
+  let words = null
+  if (!!process.argv[2]) {
+    words = process.argv[2];
+  } else {
+    words = await getRandomWords();
+  }
+  
   console.log(`Words generated: ${words}`)
   const caption = await getImageCaption(words);
   imageCaption = caption + ` #${randomArtStyle}`

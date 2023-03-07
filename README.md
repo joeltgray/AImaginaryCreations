@@ -14,8 +14,16 @@ Clone this Git repo to your local environment
 
 Run `npm install` from the root working directory to install the project using node
 
-Run `npm run start` to begin the program
+Run `npm run start` to begin the program using randomly generated words
 
+
+If you wish to specify your own words to give to the prompt rather than have the words be randomly generated you can pass them into the script like so:
+
+Run `npm run start -- helicopter` to pass the word helicopter in as your intended word
+
+Or:
+
+Run `npm run start -- "more words"` to pass in multiple words in one go.
 
 ### This program is a fully automated AI bot. The program works in 5 main steps:
 1: Generates between 2 to 5 random words from the dictionary 
