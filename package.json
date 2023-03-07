@@ -4,7 +4,8 @@
   "description": "A program to generate random images using AI prompts",
   "main": "src/index.js",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "help": "node ./src/help.js"
   },
   "repository": {
     "type": "git",
