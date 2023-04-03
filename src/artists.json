@@ -1,0 +1,134 @@
+[
+    {
+        "name": "Salvador Dali",
+        "description": "A Spanish surrealist painter known for his bizarre and dreamlike imagery, such as melting clocks and distorted landscapes."
+    },
+    {
+        "name": "Edvard Munch",
+        "description": "A Norwegian painter and printmaker known for his emotionally charged works, including the iconic painting 'The Scream'."
+    },
+    {
+        "name": "Vincent van Gogh",
+        "description": "A Dutch post-impressionist painter known for his vivid colors, bold brushstrokes, and emotional intensity, as seen in works such as 'Starry Night' and 'Sunflowers'."
+    },
+    {
+        "name": "Claude Monet",
+        "description": "A French impressionist painter known for his series of paintings depicting water lilies and the changing effects of light on the landscape."
+    },
+    {
+        "name": "Pablo Picasso",
+        "description": "A Spanish artist who is widely considered one of the most influential artists of the 20th century. He was a co-founder of the Cubist movement and is known for his many styles and innovations, such as his invention of collage and assemblage."
+    },
+    {
+        "name": "Georgia O'Keeffe",
+        "description": "An American artist known for her large-scale paintings of flowers, animal skulls, and landscapes, which often have a sensual and abstract quality."
+    },
+    {
+        "name": "Francisco Goya",
+        "description": "A Spanish painter and printmaker known for his powerful depictions of war, violence, and social injustice, as well as his imaginative and fantastical works, such as 'The Sleep of Reason Produces Monsters'."
+    },
+    {
+        "name": "Rembrandt van Rijn",
+        "description": "A Dutch painter and etcher known for his dramatic use of light and shadow, as well as his portraits, landscapes, and biblical scenes."
+    },
+    {
+        "name": "Henri Matisse",
+        "description": "A French artist known for his use of bright colors and simplified forms, as seen in works such as 'The Dance' and 'The Red Studio'. He was a leader of the Fauvism movement."
+    },
+    {
+        "name": "Andy Warhol",
+        "description": "An American artist known for his contributions to the Pop Art movement, including his paintings of Campbell's soup cans and Marilyn Monroe, as well as his experimental films and music."
+    },
+    {
+        "name": "Johannes Vermeer",
+        "description": "A Dutch painter known for his meticulously detailed and luminous scenes of everyday life, such as 'Girl with a Pearl Earring' and 'The Milkmaid'."
+    },
+    {
+        "name": "Leonardo da Vinci",
+        "description": "An Italian artist, inventor, and polymath known for his many achievements in art, science, and engineering. He painted the iconic 'Mona Lisa' and 'The Last Supper'."
+    },
+    {
+        "name": "Michelangelo",
+        "description": "An Italian Renaissance artist known for his sculptures, such as 'David' and 'Pieta', as well as his frescoes in the Sistine Chapel, including 'The Creation of Adam'."
+    },
+    {
+        "name": "Raphael",
+        "description": "An Italian Renaissance painter known for his graceful and harmonious compositions, such as 'The School of Athens' and 'The Sistine Madonna'."
+    },
+    {
+        "name": "Auguste Rodin",
+        "description": "A French sculptor who is widely considered the father of modern sculpture. He is best known for works such as The Thinker, The Kiss, and The Gates of Hell, and for his innovative use of dynamic poses and expressive textures."
+    },
+    {
+        "name": "Frida Kahlo",
+        "description": "Mexican painter known for her colorful self-portraits and works inspired by indigenous Mexican culture."
+    },
+    {
+        "name": "Henri Matisse",
+        "description": "French painter known for his use of color and his innovative approach to composition."
+    },
+    {
+        "name": "Edward Hopper",
+        "description": "American painter known for his realistic depictions of American life and urban landscapes."
+    },
+    {
+        "name": "Mark Rothko",
+        "description": "American painter known for his large abstract paintings featuring blocks of color and his use of color to express emotion."
+    },
+    {
+        "name": "Jackson Pollock",
+        "description": "American painter known for his abstract expressionist style, characterized by dripped and splattered paint."
+    },
+    {
+        "name": "Gustav Klimt",
+        "description": "Austrian painter known for his decorative style and use of gold leaf in his paintings."
+    },
+    {
+        "name": "Diego Rivera",
+        "description": "Mexican painter known for his murals depicting the history and culture of Mexico."
+    },
+    {
+        "name": "Joan Miró",
+        "description": "Spanish painter known for his abstract, surrealist style and use of bright colors."
+    },
+    {
+        "name": "Auguste Rodin",
+        "description": "French sculptor known for his expressive bronze sculptures, including The Thinker and The Kiss."
+    },
+    {
+        "name": "Caravaggio",
+        "description": "Italian painter known for his dramatic, realistic style and use of chiaroscuro (contrasting light and dark)."
+    },
+    {
+        "name": "Rene Magritte",
+        "description": "Belgian surrealist painter known for his thought-provoking images and use of humor in his work."
+    },
+    {
+        "name": "Tamara de Lempicka",
+        "description": "Polish Art Deco painter known for her portraits of the wealthy and famous."
+    },
+    {
+        "name": "Paul Cézanne",
+        "description": "French painter known for his post-impressionist style and his influence on the development of modern art."
+    },
+    {
+        "name": "Edgar Degas",
+        "description": "French painter known for his depictions of ballerinas and everyday life in Paris."
+    },
+    {
+        "name": "Gustave Courbet",
+        "description": "French painter known for his realist style and his controversial political views."
+    },
+    {
+        "name": "Egon Schiele",
+        "description": "Austrian painter known for his intense and often erotic portraits and self-portraits."
+    },
+    {
+        "name": "Jean-Michel Basquiat",
+        "description": "American painter known for his street art style and his use of social commentary in his work."
+    },
+    {
+        "name": "Yayoi Kusama",
+        "description": "Japanese contemporary artist known for her avant-garde sculptures and installations, often featuring polka dots."
+    }
+]

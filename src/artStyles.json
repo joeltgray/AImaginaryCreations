@@ -16,11 +16,11 @@
     "description": "A style of art that uses elements of fantasy, dream, and the subconscious to create a sense of irrationality and surprise"
   },
   {
-    "name": "AbstractArt",
+    "name": "Abstract Art",
     "description": "A style of art that does not depict realistic objects or scenes, but rather uses color, shape, and form to create a visual experience"
   },
   {
-    "name": "PopArt",
+    "name": "Pop Art",
     "description": "A style of art that uses imagery from popular culture, such as advertisements, comic books, and consumer products, to comment on society and consumerism"
   },
   {
@@ -40,7 +40,7 @@
     "description": "A style of art that emerged during World War I as a reaction to the absurdity and horror of the war, often using found objects and collage"
   },
   {
-    "name": "OpArt",
+    "name": "Op Art",
     "description": "A style of art that uses optical illusions and geometric patterns to create a sense of movement and depth"
   },
   {
@@ -60,27 +60,27 @@
     "description": "A style of art that emerged in the late 18th century, characterized by emotion, imagination, and a fascination with the natural world"
   },
   {
-    "name": "ArtNouveau",
+    "name": "Art Nouveau",
     "description": "A style of art and architecture that emerged in the late 19th century, characterized by organic forms, asymmetry, and the use of new materials, such as iron and glass"
   },
   {
-    "name": "ArtDeco",
+    "name": "Art Deco",
     "description": "A style of art and architecture that emerged in the 1920s, characterized by geometric shapes, bold colors, and the use of new materials, such as stainless steel and plastic"
   },
   {
-    "name": "AbstractExpressionism",
+    "name": "Abstract Expressionism",
     "description": "A style of art that emerged in the 1940s in the United States, characterized by the use of large canvases, gestural brushstrokes, and the exploration of the unconscious"
   },
   {
-    "name": "ConceptualArt",
+    "name": "Conceptual Art",
     "description": "A style of art that emerged in the 1960s, characterized by the use of ideas and concepts as the primary medium of expression, rather than the traditional art forms"
   },
   {
-    "name": "NeoExpressionism",
+    "name": "Neo-Expressionism",
     "description": "A style of art that emerged in the 1970s and 1980s, characterized by the use of bright colors, bold brushstrokes, and the return to figuration, often with an emotional and symbolic content"
   },
   {
-    "name": "DigitalArt",
+    "name": "Digital Art",
     "description": "Art created with the use of digital technology, including computer software and hardware, to produce images, animations, and interactive pieces"
   },
   {
@@ -88,7 +88,7 @@
     "description": "The art of creating still or moving images by capturing light onto a light-sensitive medium, such as film or digital sensors, through the use of a camera."
   },
   {
-    "name": "RealLife",
+    "name": "Real Life",
     "description": "Refers to events, experiences, or objects that exist in the physical world and are not imagined or created digitally."
   }
 ]
