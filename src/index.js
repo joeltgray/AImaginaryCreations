@@ -144,6 +144,7 @@ const postImage = async (imageUrl, caption) => {
   const ig = new IgApiClient();
   ig.state.generateDevice(username);
   await ig.account.login(username, password);
+  await ig.simulate.preLoginFlow();
   console.log("\nInstagram logged in");
   const imageBuffer = await get({
     url: imageUrl,
