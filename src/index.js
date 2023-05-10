@@ -32,7 +32,7 @@ const getRandomWords = async () => {
 
 const getImageCaption = async (words) => {
   let response;
-  const prompt = `Use the following words: never brought. Create a caption for an image that would make an image AI generator create an amazing picture.`;
+  const prompt = `Use the following words: ${words}. Create a caption for an image that would make an image AI generator create an amazing picture.`;
   console.log("Prompt: " + prompt);
 
   try{
@@ -50,7 +50,7 @@ const getImageCaption = async (words) => {
 
 const createPrompt = async (prompt) => {
   return await openai.createChatCompletion({
-    model: "gpt-3.5-turbo",
+    model: "gpt-4",
     messages: [{"role":"user", "content": prompt}],
     temperature: 0
   });
